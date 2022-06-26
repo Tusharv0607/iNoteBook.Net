@@ -26,7 +26,7 @@ const NoteState = (props) => {
     //Add note
     const addNote = async (title, description, tag) => {
 
-        const response = await fetch(`http://localhost/api/notes/addNotes`, {
+        const response = await fetch(`${host}/api/notes/addNotes`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
